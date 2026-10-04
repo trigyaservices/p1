@@ -1,0 +1,1205 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "System Administrator",
+      "username": "admin",
+      "password_hash": "$2a$10$wT8Kz.y2mB1.PZ/z7s4hAeuCeqmE9vW/pC1zD2qKjB9A4kU9U0m8C",
+      "email": "admin@pawsandcare.org",
+      "phone": "+91 9876543210",
+      "role": "ADMIN",
+      "status": "ACTIVE",
+      "must_change_password": 0,
+      "last_login_at": "2026-10-03 10:15:00",
+      "created_at": "2026-01-01 09:00:00"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Aakash Sharma",
+      "username": "dr.sharma",
+      "password_hash": "$2a$10$uA9Kz.y2mB1.PZ/z7s4hAeuCeqmE9vW/pC1zD2qKjB9A4kU9U0m8S",
+      "email": "aakash.sharma@vetcare.in",
+      "phone": "+91 9823456781",
+      "role": "STAFF",
+      "status": "ACTIVE",
+      "must_change_password": 0,
+      "last_login_at": "2026-10-02 16:30:00",
+      "created_at": "2026-01-10 11:00:00"
+    },
+    {
+      "id": 3,
+      "name": "Priya Patel",
+      "username": "priya.patel",
+      "password_hash": "$2a$10$uA9Kz.y2mB1.PZ/z7s4hAeuCeqmE9vW/pC1zD2qKjB9A4kU9U0m8S",
+      "email": "priya.patel@pawsandcare.org",
+      "phone": "+91 9712345678",
+      "role": "STAFF",
+      "status": "ACTIVE",
+      "must_change_password": 0,
+      "last_login_at": "2026-10-03 09:45:00",
+      "created_at": "2026-01-15 14:00:00"
+    },
+    {
+      "id": 4,
+      "name": "Vikram Singh",
+      "username": "vikram.rescue",
+      "password_hash": "$2a$10$uA9Kz.y2mB1.PZ/z7s4hAeuCeqmE9vW/pC1zD2qKjB9A4kU9U0m8S",
+      "email": "vikram.singh@pawsandcare.org",
+      "phone": "+91 9654321876",
+      "role": "STAFF",
+      "status": "ACTIVE",
+      "must_change_password": 0,
+      "last_login_at": "2026-10-01 11:20:00",
+      "created_at": "2026-02-01 10:30:00"
+    },
+    {
+      "id": 5,
+      "name": "Anita Deshmukh",
+      "username": "anita.adopter",
+      "password_hash": "$2a$10$vB9Kz.y2mB1.PZ/z7s4hAeuCeqmE9vW/pC1zD2qKjB9A4kU9U0m8U",
+      "email": "anita.deshmukh@gmail.com",
+      "phone": "+91 9988776655",
+      "role": "USER",
+      "status": "ACTIVE",
+      "must_change_password": 0,
+      "last_login_at": "2026-10-02 18:00:00",
+      "created_at": "2026-03-01 12:00:00"
+    }
+  ],
+  "admins": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "is_root": 1,
+      "created_at": "2026-01-01 09:00:00"
+    }
+  ],
+  "permissions": [
+    {
+      "id": 1,
+      "code": "VIEW_PETS",
+      "name": "View Pets",
+      "module": "Pets",
+      "description": "Can view pet list and profile details"
+    },
+    {
+      "id": 2,
+      "code": "ADD_PET",
+      "name": "Add Pet",
+      "module": "Pets",
+      "description": "Can create new pet profiles"
+    },
+    {
+      "id": 3,
+      "code": "EDIT_PET",
+      "name": "Edit Pet",
+      "module": "Pets",
+      "description": "Can modify existing pet records"
+    },
+    {
+      "id": 4,
+      "code": "DELETE_PET",
+      "name": "Delete Pet",
+      "module": "Pets",
+      "description": "Can archive or remove pet records"
+    },
+    {
+      "id": 5,
+      "code": "UPLOAD_PHOTOS",
+      "name": "Upload Photos",
+      "module": "Gallery",
+      "description": "Can upload and set primary pet photos"
+    },
+    {
+      "id": 6,
+      "code": "MEDICAL",
+      "name": "Medical Records",
+      "module": "Medical",
+      "description": "Can add and view clinical health records"
+    },
+    {
+      "id": 7,
+      "code": "VACCINATION",
+      "name": "Vaccination Records",
+      "module": "Vaccination",
+      "description": "Can manage vaccines, deworming and alerts"
+    },
+    {
+      "id": 8,
+      "code": "MONTHLY_REPORTS",
+      "name": "Monthly Reports",
+      "module": "Reports",
+      "description": "Can create and review monthly health evaluations"
+    },
+    {
+      "id": 9,
+      "code": "ADOPTION",
+      "name": "Adoption System",
+      "module": "Adoption",
+      "description": "Can process applications and approvals"
+    },
+    {
+      "id": 10,
+      "code": "VISITS",
+      "name": "Visit Management",
+      "module": "Visits",
+      "description": "Can schedule visits and record evaluations"
+    },
+    {
+      "id": 11,
+      "code": "REPORTS",
+      "name": "System Reports",
+      "module": "Analytics",
+      "description": "Can generate, view and export system reports"
+    },
+    {
+      "id": 12,
+      "code": "USER_MANAGEMENT",
+      "name": "User Management",
+      "module": "Administration",
+      "description": "Can create users, assign permissions and reset passwords"
+    },
+    {
+      "id": 13,
+      "code": "SETTINGS",
+      "name": "System Settings",
+      "module": "Administration",
+      "description": "Can configure shelter profile and system parameters"
+    }
+  ],
+  "user_permissions": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "permission_id": 1
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "permission_id": 2
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "permission_id": 3
+    },
+    {
+      "id": 4,
+      "user_id": 1,
+      "permission_id": 4
+    },
+    {
+      "id": 5,
+      "user_id": 1,
+      "permission_id": 5
+    },
+    {
+      "id": 6,
+      "user_id": 1,
+      "permission_id": 6
+    },
+    {
+      "id": 7,
+      "user_id": 1,
+      "permission_id": 7
+    },
+    {
+      "id": 8,
+      "user_id": 1,
+      "permission_id": 8
+    },
+    {
+      "id": 9,
+      "user_id": 1,
+      "permission_id": 9
+    },
+    {
+      "id": 10,
+      "user_id": 1,
+      "permission_id": 10
+    },
+    {
+      "id": 11,
+      "user_id": 1,
+      "permission_id": 11
+    },
+    {
+      "id": 12,
+      "user_id": 1,
+      "permission_id": 12
+    },
+    {
+      "id": 13,
+      "user_id": 1,
+      "permission_id": 13
+    },
+    {
+      "id": 14,
+      "user_id": 2,
+      "permission_id": 1
+    },
+    {
+      "id": 15,
+      "user_id": 2,
+      "permission_id": 6
+    },
+    {
+      "id": 16,
+      "user_id": 2,
+      "permission_id": 7
+    },
+    {
+      "id": 17,
+      "user_id": 2,
+      "permission_id": 8
+    },
+    {
+      "id": 18,
+      "user_id": 2,
+      "permission_id": 11
+    },
+    {
+      "id": 19,
+      "user_id": 3,
+      "permission_id": 1
+    },
+    {
+      "id": 20,
+      "user_id": 3,
+      "permission_id": 2
+    },
+    {
+      "id": 21,
+      "user_id": 3,
+      "permission_id": 3
+    },
+    {
+      "id": 22,
+      "user_id": 3,
+      "permission_id": 5
+    },
+    {
+      "id": 23,
+      "user_id": 3,
+      "permission_id": 9
+    },
+    {
+      "id": 24,
+      "user_id": 3,
+      "permission_id": 10
+    },
+    {
+      "id": 25,
+      "user_id": 3,
+      "permission_id": 11
+    },
+    {
+      "id": 26,
+      "user_id": 4,
+      "permission_id": 1
+    },
+    {
+      "id": 27,
+      "user_id": 4,
+      "permission_id": 2
+    },
+    {
+      "id": 28,
+      "user_id": 4,
+      "permission_id": 5
+    },
+    {
+      "id": 29,
+      "user_id": 4,
+      "permission_id": 10
+    },
+    {
+      "id": 30,
+      "user_id": 5,
+      "permission_id": 1
+    },
+    {
+      "id": 31,
+      "user_id": 5,
+      "permission_id": 9
+    }
+  ],
+  "pets": [
+    {
+      "id": 1,
+      "pet_code": "PET-2026-00001",
+      "name": "Bruno",
+      "animal_type": "Dog",
+      "breed": "Golden Retriever",
+      "dob": "2024-04-12",
+      "age": "2 years 6 months",
+      "gender": "Male",
+      "color": "Golden Cream",
+      "weight": 28.5,
+      "identification_mark": "White patch on lower chest",
+      "microchip_number": "985141001234567",
+      "rescue_date": "2026-01-15",
+      "rescue_location": "Baner Road, Pune",
+      "current_location": "Shelter Play Area",
+      "health_status": "Healthy",
+      "behaviour": "Extremely friendly, high energy, loves playing fetch, great with children and other dogs",
+      "description": "Bruno is an affectionate Golden Retriever who loves belly rubs and outdoor activities. He is house-trained and ready for a loving family.",
+      "adoption_status": "Available",
+      "primary_photo_url": "https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=80",
+      "rescue_id": null,
+      "created_by": 1,
+      "created_at": "2026-01-16 10:00:00"
+    },
+    {
+      "id": 2,
+      "pet_code": "PET-2026-00002",
+      "name": "Luna",
+      "animal_type": "Cat",
+      "breed": "Persian Mix",
+      "dob": "2025-01-20",
+      "age": "1 year 8 months",
+      "gender": "Female",
+      "color": "Snow White",
+      "weight": 4.2,
+      "identification_mark": "Heterochromia (one blue eye, one amber eye)",
+      "microchip_number": "985141009876543",
+      "rescue_date": "2026-02-18",
+      "rescue_location": "Kothrud, Pune",
+      "current_location": "Cattery Suite 2",
+      "health_status": "Healthy",
+      "behaviour": "Calm, gentle, quiet purrer, prefers indoor environments and lap naps",
+      "description": "Luna is a regal white cat with striking eyes. She is vaccinated, spayed, and looking for a quiet home where she can be pampered.",
+      "adoption_status": "Application Pending",
+      "primary_photo_url": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80",
+      "rescue_id": null,
+      "created_by": 1,
+      "created_at": "2026-02-20 12:30:00"
+    },
+    {
+      "id": 3,
+      "pet_code": "PET-2026-00003",
+      "name": "Rocky",
+      "animal_type": "Dog",
+      "breed": "German Shepherd Mix",
+      "dob": "2023-11-05",
+      "age": "2 years 11 months",
+      "gender": "Male",
+      "color": "Black and Tan",
+      "weight": 31,
+      "identification_mark": "Scar on left hind leg from old rescue injury",
+      "microchip_number": "985141005544332",
+      "rescue_date": "2026-05-10",
+      "rescue_location": "Highway 48 near Pune",
+      "current_location": "Recovery Enclosure 1",
+      "health_status": "Under Treatment",
+      "behaviour": "Alert, loyal, protective, eager to learn commands, slightly shy around strangers",
+      "description": "Rescued from the highway with leg trauma. Now walking normally but completing anti-inflammatory physical therapy.",
+      "adoption_status": "Under Treatment",
+      "primary_photo_url": "https://images.unsplash.com/photo-1589941013453-ec89f33b5455?auto=format&fit=crop&w=800&q=80",
+      "rescue_id": 1,
+      "created_by": 4,
+      "created_at": "2026-05-12 15:40:00"
+    },
+    {
+      "id": 4,
+      "pet_code": "PET-2026-00004",
+      "name": "Milo",
+      "animal_type": "Cat",
+      "breed": "Domestic Short Hair",
+      "dob": "2025-06-10",
+      "age": "1 year 4 months",
+      "gender": "Male",
+      "color": "Orange Tabby",
+      "weight": 3.8,
+      "identification_mark": "Swirled marble pattern on sides",
+      "microchip_number": "985141007788990",
+      "rescue_date": "2026-03-22",
+      "rescue_location": "Aundh Vegetable Market",
+      "current_location": "Cattery Lounge",
+      "health_status": "Healthy",
+      "behaviour": "Inquisitive, vocal, loves chasing feather toys and laser pointers",
+      "description": "Milo is a vibrant ginger boy with lots of personality. He loves company and will happily chat with you throughout the day.",
+      "adoption_status": "Available",
+      "primary_photo_url": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=800&q=80",
+      "rescue_id": null,
+      "created_by": 3,
+      "created_at": "2026-03-23 09:15:00"
+    },
+    {
+      "id": 5,
+      "pet_code": "PET-2026-00005",
+      "name": "Charlie",
+      "animal_type": "Dog",
+      "breed": "Beagle",
+      "dob": "2024-08-14",
+      "age": "2 years 2 months",
+      "gender": "Male",
+      "color": "Tricolor (White, Black, Tan)",
+      "weight": 12.4,
+      "identification_mark": "Heart-shaped black spot near tail base",
+      "microchip_number": "985141003322114",
+      "rescue_date": "2026-02-02",
+      "rescue_location": "Viman Nagar, Pune",
+      "current_location": "Adopted Home",
+      "health_status": "Healthy",
+      "behaviour": "Gentle, food-motivated, curious sniffer, wonderful with kids",
+      "description": "Charlie was happily adopted by the Kulkarni family after completing all adoption protocols and home visits.",
+      "adoption_status": "Adopted",
+      "primary_photo_url": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&w=800&q=80",
+      "rescue_id": null,
+      "created_by": 1,
+      "created_at": "2026-02-03 14:00:00"
+    },
+    {
+      "id": 6,
+      "pet_code": "PET-2026-00006",
+      "name": "Kiwi",
+      "animal_type": "Bird",
+      "breed": "Cockatiel",
+      "dob": "2025-03-01",
+      "age": "1 year 7 months",
+      "gender": "Female",
+      "color": "Grey and Yellow Crest",
+      "weight": 0.1,
+      "identification_mark": "Bright orange cheek circles",
+      "microchip_number": null,
+      "rescue_date": "2026-04-14",
+      "rescue_location": "Kalyani Nagar Garden",
+      "current_location": "Aviary Enclosure B",
+      "health_status": "Healthy",
+      "behaviour": "Whistles tunes, responds to human voices, loves millet treats",
+      "description": "Kiwi is a cheerful cockatiel who loves singing in the morning. Looking for an experienced bird lover with a spacious cage.",
+      "adoption_status": "Available",
+      "primary_photo_url": "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=800&q=80",
+      "rescue_id": null,
+      "created_by": 3,
+      "created_at": "2026-04-15 16:20:00"
+    },
+    {
+      "id": 7,
+      "pet_code": "PET-2026-00007",
+      "name": "Snowball",
+      "animal_type": "Rabbit",
+      "breed": "Angora mix",
+      "dob": "2025-08-12",
+      "age": "1 year 2 months",
+      "gender": "Female",
+      "color": "Fluffy White",
+      "weight": 2.1,
+      "identification_mark": "Pink ears and soft long woolly coat",
+      "microchip_number": null,
+      "rescue_date": "2026-05-18",
+      "rescue_location": "Hadapsar Farmhouse vicinity",
+      "current_location": "Foster Home (Sneha)",
+      "health_status": "Healthy",
+      "behaviour": "Timid initially, enjoys gentle ear strokes, fond of fresh hay and cilantro",
+      "description": "Currently in foster care undergoing socialisation. Ideal for an indoor quiet home.",
+      "adoption_status": "Foster",
+      "primary_photo_url": "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=800&q=80",
+      "rescue_id": null,
+      "created_by": 3,
+      "created_at": "2026-05-19 11:10:00"
+    },
+    {
+      "id": 8,
+      "pet_code": "PET-2026-00008",
+      "name": "Bella",
+      "animal_type": "Dog",
+      "breed": "Labrador Retriever",
+      "dob": "2024-11-20",
+      "age": "1 year 11 months",
+      "gender": "Female",
+      "color": "Chocolate Brown",
+      "weight": 25.8,
+      "identification_mark": "Small white star on chest",
+      "microchip_number": "985141004455667",
+      "rescue_date": "2026-06-01",
+      "rescue_location": "Camp Area, Pune",
+      "current_location": "Shelter Kennel B2",
+      "health_status": "Healthy",
+      "behaviour": "Bubbly, obedience-trained, loyal companion, water lover",
+      "description": "Bella is a sweet chocolate lab with soulful eyes. She has a scheduled adoption visit lined up this week.",
+      "adoption_status": "Visit Scheduled",
+      "primary_photo_url": "https://images.unsplash.com/photo-1591769225440-811ad7d6eab2?auto=format&fit=crop&w=800&q=80",
+      "rescue_id": null,
+      "created_by": 1,
+      "created_at": "2026-06-02 10:45:00"
+    },
+    {
+      "id": 9,
+      "pet_code": "PET-2026-00009",
+      "name": "Cookie",
+      "animal_type": "Hamster",
+      "breed": "Syrian Hamster",
+      "dob": "2026-02-15",
+      "age": "8 months",
+      "gender": "Male",
+      "color": "Golden Honey",
+      "weight": 0.15,
+      "identification_mark": "White belly and black button eyes",
+      "microchip_number": null,
+      "rescue_date": "2026-06-25",
+      "rescue_location": "Surrendered by previous owner moving abroad",
+      "current_location": "Small Pets Room",
+      "health_status": "Healthy",
+      "behaviour": "Active at twilight, loves running on wheel, clean habits",
+      "description": "A tiny ball of joy. Low-maintenance pet looking for a home with a cozy habitrail setup.",
+      "adoption_status": "Available",
+      "primary_photo_url": "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?auto=format&fit=crop&w=800&q=80",
+      "rescue_id": null,
+      "created_by": 3,
+      "created_at": "2026-06-26 13:00:00"
+    },
+    {
+      "id": 10,
+      "pet_code": "PET-2026-00010",
+      "name": "Shelly",
+      "animal_type": "Turtle",
+      "breed": "Indian Star Turtle (Rescued)",
+      "dob": "2022-01-10",
+      "age": "4 years 9 months",
+      "gender": "Unknown",
+      "color": "Patterned Star Shell",
+      "weight": 1.8,
+      "identification_mark": "Distinct geometrical star shell scutes",
+      "microchip_number": null,
+      "rescue_date": "2026-07-02",
+      "rescue_location": "Confiscated during illegal pet trade check",
+      "current_location": "Aquatic Habitat 1",
+      "health_status": "Healthy",
+      "behaviour": "Peaceful herbivore, basks under UV lamp, enjoys hibiscus leaves",
+      "description": "Rescued and rehabilitated under wildlife veterinary guidelines. Eligible for legally registered adoption.",
+      "adoption_status": "Available",
+      "primary_photo_url": "https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?auto=format&fit=crop&w=800&q=80",
+      "rescue_id": null,
+      "created_by": 4,
+      "created_at": "2026-07-03 17:30:00"
+    }
+  ],
+  "pet_photos": [
+    {
+      "id": 1,
+      "pet_id": 1,
+      "photo_url": "https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=80",
+      "file_name": "bruno_front.jpg",
+      "caption": "Bruno sitting gracefully in the yard",
+      "is_primary": 1,
+      "uploaded_by": 1,
+      "created_at": "2026-01-16 10:05:00"
+    },
+    {
+      "id": 2,
+      "pet_id": 1,
+      "photo_url": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80",
+      "file_name": "bruno_playing.jpg",
+      "caption": "Bruno enjoying tennis ball practice",
+      "is_primary": 0,
+      "uploaded_by": 1,
+      "created_at": "2026-01-16 10:06:00"
+    },
+    {
+      "id": 3,
+      "pet_id": 2,
+      "photo_url": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80",
+      "file_name": "luna_portrait.jpg",
+      "caption": "Luna close up showing heterochromia eyes",
+      "is_primary": 1,
+      "uploaded_by": 1,
+      "created_at": "2026-02-20 12:35:00"
+    },
+    {
+      "id": 4,
+      "pet_id": 3,
+      "photo_url": "https://images.unsplash.com/photo-1589941013453-ec89f33b5455?auto=format&fit=crop&w=800&q=80",
+      "file_name": "rocky_recovering.jpg",
+      "caption": "Rocky during therapy walking exercise",
+      "is_primary": 1,
+      "uploaded_by": 4,
+      "created_at": "2026-05-12 15:45:00"
+    },
+    {
+      "id": 5,
+      "pet_id": 4,
+      "photo_url": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=800&q=80",
+      "file_name": "milo_eyes.jpg",
+      "caption": "Milo gazing curiously at the camera",
+      "is_primary": 1,
+      "uploaded_by": 3,
+      "created_at": "2026-03-23 09:20:00"
+    },
+    {
+      "id": 6,
+      "pet_id": 5,
+      "photo_url": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&w=800&q=80",
+      "file_name": "charlie_beagle.jpg",
+      "caption": "Charlie outdoor portrait",
+      "is_primary": 1,
+      "uploaded_by": 1,
+      "created_at": "2026-02-03 14:05:00"
+    },
+    {
+      "id": 7,
+      "pet_id": 6,
+      "photo_url": "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=800&q=80",
+      "file_name": "kiwi_crest.jpg",
+      "caption": "Kiwi showing her yellow crown",
+      "is_primary": 1,
+      "uploaded_by": 3,
+      "created_at": "2026-04-15 16:25:00"
+    },
+    {
+      "id": 8,
+      "pet_id": 7,
+      "photo_url": "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=800&q=80",
+      "file_name": "snowball_bunny.jpg",
+      "caption": "Snowball nibbling green grass",
+      "is_primary": 1,
+      "uploaded_by": 3,
+      "created_at": "2026-05-19 11:15:00"
+    },
+    {
+      "id": 9,
+      "pet_id": 8,
+      "photo_url": "https://images.unsplash.com/photo-1591769225440-811ad7d6eab2?auto=format&fit=crop&w=800&q=80",
+      "file_name": "bella_lab.jpg",
+      "caption": "Bella smiling in sunshine",
+      "is_primary": 1,
+      "uploaded_by": 1,
+      "created_at": "2026-06-02 10:50:00"
+    },
+    {
+      "id": 10,
+      "pet_id": 9,
+      "photo_url": "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?auto=format&fit=crop&w=800&q=80",
+      "file_name": "cookie_hamster.jpg",
+      "caption": "Cookie enjoying snack",
+      "is_primary": 1,
+      "uploaded_by": 3,
+      "created_at": "2026-06-26 13:10:00"
+    },
+    {
+      "id": 11,
+      "pet_id": 10,
+      "photo_url": "https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?auto=format&fit=crop&w=800&q=80",
+      "file_name": "shelly_turtle.jpg",
+      "caption": "Shelly resting on sun rock",
+      "is_primary": 1,
+      "uploaded_by": 4,
+      "created_at": "2026-07-03 17:35:00"
+    }
+  ],
+  "medical_records": [
+    {
+      "id": 1,
+      "pet_id": 1,
+      "record_date": "2026-01-20",
+      "vet_name": "Dr. Aakash Sharma",
+      "diagnosis": "Intake Comprehensive Health Examination",
+      "symptoms": "None - asymptomatic routine check",
+      "treatment": "Full body vitals, coat examination, dental screening, ear swab test",
+      "medicine": "Broad-spectrum deworming tablet (Drontal Plus)",
+      "notes": "Pet is in prime physical condition. Heartbeat regular, lungs clear.",
+      "document_url": "/uploads/medical/bruno_intake_report.pdf",
+      "document_name": "bruno_intake_report.pdf",
+      "created_by": 2,
+      "created_at": "2026-01-20 11:00:00"
+    },
+    {
+      "id": 2,
+      "pet_id": 3,
+      "record_date": "2026-05-11",
+      "vet_name": "Dr. Aakash Sharma",
+      "diagnosis": "Left Hind Paw Soft Tissue Trauma & Abrasion",
+      "symptoms": "Limping, tenderness on palpation, localized inflammation",
+      "treatment": "Wound antiseptic cleansing, sterile bandaging, cold compress therapy",
+      "medicine": "Meloxicam 1.5mg oral suspension, Amoxicillin-Clavulanate 250mg",
+      "notes": "X-ray confirmed no bone fractures. Advised 3 weeks limited physical activity.",
+      "document_url": "/uploads/medical/rocky_xray_report.pdf",
+      "document_name": "rocky_xray_report.pdf",
+      "created_by": 2,
+      "created_at": "2026-05-11 14:30:00"
+    },
+    {
+      "id": 3,
+      "pet_id": 2,
+      "record_date": "2026-02-25",
+      "vet_name": "Dr. Aakash Sharma",
+      "diagnosis": "Otitis Externa (Ear Mites infestation)",
+      "symptoms": "Head shaking, ear scratching, dark discharge in ear canal",
+      "treatment": "Deep ear canal flush, topical acaricide drops application",
+      "medicine": "Tresaderm ear drops twice daily for 10 days",
+      "notes": "Follow-up on day 10 indicated complete eradication of mites.",
+      "document_url": "/uploads/medical/luna_ear_culture.pdf",
+      "document_name": "luna_ear_culture.pdf",
+      "created_by": 2,
+      "created_at": "2026-02-25 16:15:00"
+    },
+    {
+      "id": 4,
+      "pet_id": 8,
+      "record_date": "2026-06-05",
+      "vet_name": "Dr. Aakash Sharma",
+      "diagnosis": "Pre-Adoption Fitness Evaluation",
+      "symptoms": "Healthy baseline",
+      "treatment": "Cardiovascular check, weight audit, parasite screening",
+      "medicine": "Flea & Tick Prevention Spot-on (Bravecto)",
+      "notes": "Fully fit and certified ready for home placement.",
+      "document_url": "/uploads/medical/bella_fitness_cert.pdf",
+      "document_name": "bella_fitness_cert.pdf",
+      "created_by": 2,
+      "created_at": "2026-06-05 10:00:00"
+    }
+  ],
+  "medical_documents": [],
+  "vaccinations": [
+    {
+      "id": 1,
+      "pet_id": 1,
+      "vaccine_name": "Anti-Rabies Booster (Rabisin)",
+      "record_type": "Vaccination",
+      "vaccine_date": "2025-09-20",
+      "next_due_date": "2026-09-20",
+      "vet_name": "Dr. Aakash Sharma",
+      "certificate_url": "/uploads/vaccines/bruno_rabies_2025.pdf",
+      "notes": "Booster overdue by 2 weeks. Immediate recall required.",
+      "status": "OVERDUE",
+      "created_by": 2,
+      "created_at": "2025-09-20 10:00:00"
+    },
+    {
+      "id": 2,
+      "pet_id": 1,
+      "vaccine_name": "DHPPi + Leptospirosis 7-in-1",
+      "record_type": "Vaccination",
+      "vaccine_date": "2025-10-07",
+      "next_due_date": "2026-10-07",
+      "vet_name": "Dr. Aakash Sharma",
+      "certificate_url": "/uploads/vaccines/bruno_dhppi.pdf",
+      "notes": "Annual booster reminder flagged for upcoming appointment.",
+      "status": "DUE_SOON",
+      "created_by": 2,
+      "created_at": "2025-10-07 10:30:00"
+    },
+    {
+      "id": 3,
+      "pet_id": 2,
+      "vaccine_name": "FVRCP Tri-cat Core Vaccine",
+      "record_type": "Vaccination",
+      "vaccine_date": "2025-12-15",
+      "next_due_date": "2026-12-15",
+      "vet_name": "Dr. Aakash Sharma",
+      "certificate_url": "/uploads/vaccines/luna_fvrcp.pdf",
+      "notes": "Next booster in December. Cat is well immunized.",
+      "status": "UPCOMING",
+      "created_by": 2,
+      "created_at": "2025-12-15 11:00:00"
+    },
+    {
+      "id": 4,
+      "pet_id": 3,
+      "vaccine_name": "Quarterly Deworming (Fenbendazole)",
+      "record_type": "Deworming",
+      "vaccine_date": "2026-07-07",
+      "next_due_date": "2026-10-07",
+      "vet_name": "Dr. Aakash Sharma",
+      "certificate_url": null,
+      "notes": "Administer oral tablet with meal.",
+      "status": "DUE_SOON",
+      "created_by": 2,
+      "created_at": "2026-07-07 14:00:00"
+    },
+    {
+      "id": 5,
+      "pet_id": 8,
+      "vaccine_name": "Bordetella Bronchiseptica Oral",
+      "record_type": "Vaccination",
+      "vaccine_date": "2026-03-10",
+      "next_due_date": "2027-03-10",
+      "vet_name": "Dr. Aakash Sharma",
+      "certificate_url": "/uploads/vaccines/bella_bordetella.pdf",
+      "notes": "Administered prior to group play socialization.",
+      "status": "UPCOMING",
+      "created_by": 2,
+      "created_at": "2026-03-10 09:30:00"
+    },
+    {
+      "id": 6,
+      "pet_id": 4,
+      "vaccine_name": "Feline Rabies Vaccine",
+      "record_type": "Vaccination",
+      "vaccine_date": "2025-09-15",
+      "next_due_date": "2026-09-15",
+      "vet_name": "Dr. Aakash Sharma",
+      "certificate_url": "/uploads/vaccines/milo_rabies.pdf",
+      "notes": "Needs booster before finalizing adoption process.",
+      "status": "OVERDUE",
+      "created_by": 2,
+      "created_at": "2025-09-15 12:00:00"
+    }
+  ],
+  "monthly_reports": [
+    {
+      "id": 1,
+      "pet_id": 1,
+      "report_month": "2026-07",
+      "weight": 27.8,
+      "health_condition": "Optimal vitality, clear coat, energetic pulse",
+      "behaviour": "Enthusiastic, obedient to sit/stay commands",
+      "food": "Royal Canin Maxi Adult, 450g daily in two split meals",
+      "treatment": "Multivitamin supplement (Nutri-Plus gel)",
+      "remarks": "Weight steady, highly socialized during volunteer yard walks.",
+      "document_url": "/uploads/reports/bruno_july_2026.pdf",
+      "created_by": 2,
+      "created_at": "2026-07-31 17:00:00"
+    },
+    {
+      "id": 2,
+      "pet_id": 1,
+      "report_month": "2026-08",
+      "weight": 28.2,
+      "health_condition": "Gained healthy lean muscle, coats glossy",
+      "behaviour": "Loves water games during summer afternoons",
+      "food": "Royal Canin Maxi Adult + boiled chicken broth on weekends",
+      "treatment": "Routine ear wipe maintenance",
+      "remarks": "Ready for adoption family matches.",
+      "document_url": "/uploads/reports/bruno_aug_2026.pdf",
+      "created_by": 2,
+      "created_at": "2026-08-31 17:30:00"
+    },
+    {
+      "id": 3,
+      "pet_id": 1,
+      "report_month": "2026-09",
+      "weight": 28.5,
+      "health_condition": "Excellent overall health, minor dental tartar managed",
+      "behaviour": "Very affectionate, calm during indoor grooming",
+      "food": "Royal Canin Maxi Adult + dental chew sticks",
+      "treatment": "Enzymatic toothpaste brushing weekly",
+      "remarks": "Vaccination booster due next month.",
+      "document_url": "/uploads/reports/bruno_sept_2026.pdf",
+      "created_by": 2,
+      "created_at": "2026-09-30 18:00:00"
+    },
+    {
+      "id": 4,
+      "pet_id": 2,
+      "report_month": "2026-09",
+      "weight": 4.2,
+      "health_condition": "Recovered from ear irritation, coat silky",
+      "behaviour": "Gentle, affectionate, sleeps near window sunlight",
+      "food": "Whiskas Ocean Fish + wet gravy food in evening",
+      "treatment": "Probiotics twice a week",
+      "remarks": "Perfect candidate for single or elderly pet parent.",
+      "document_url": "/uploads/reports/luna_sept_2026.pdf",
+      "created_by": 2,
+      "created_at": "2026-09-30 18:15:00"
+    }
+  ],
+  "monthly_report_photos": [],
+  "adoption_applications": [
+    {
+      "id": 1,
+      "application_code": "APP-2026-00001",
+      "pet_id": 4,
+      "user_id": 5,
+      "applicant_name": "Anita Deshmukh",
+      "mobile_number": "+91 9988776655",
+      "email": "anita.deshmukh@gmail.com",
+      "address": "Flat 402, Green Meadows, Senapati Bapat Road",
+      "city": "Pune",
+      "occupation": "Software Architect",
+      "family_members": 3,
+      "home_type": "Apartment (3 BHK with netted balcony)",
+      "previous_pet_experience": "Owned a rescued cat for 8 years in childhood",
+      "reason_for_adoption": "We are looking for a playful cat to complete our family and give him a warm forever home.",
+      "preferred_pet": "Milo (PET-2026-00004)",
+      "additional_information": "We work from home hybridly, so pet will always have company.",
+      "status": "PENDING",
+      "admin_remarks": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "created_at": "2026-10-02 14:20:00"
+    },
+    {
+      "id": 2,
+      "application_code": "APP-2026-00002",
+      "pet_id": 8,
+      "user_id": null,
+      "applicant_name": "Rohan Verma",
+      "mobile_number": "+91 9811223344",
+      "email": "rohan.verma@outlook.com",
+      "address": "Row House 12, Nyati Estate, Mohammed Wadi",
+      "city": "Pune",
+      "occupation": "Business Consultant",
+      "family_members": 4,
+      "home_type": "Independent Row House with fenced garden",
+      "previous_pet_experience": "Had a Golden Retriever for 11 years who passed away of old age",
+      "reason_for_adoption": "Seeking an energetic dog who loves running and companionship for our teenagers.",
+      "preferred_pet": "Bella (PET-2026-00008)",
+      "additional_information": "Full veterinary care history ready from Dr. Sethi Clinic.",
+      "status": "VISIT SCHEDULED",
+      "admin_remarks": "Applicant profile verified. Fenced garden confirmed via video call. Visit scheduled for shelter meet & greet.",
+      "reviewed_by": 1,
+      "reviewed_at": "2026-10-01 16:00:00",
+      "created_at": "2026-09-29 11:00:00"
+    },
+    {
+      "id": 3,
+      "application_code": "APP-2026-00003",
+      "pet_id": 5,
+      "user_id": null,
+      "applicant_name": "Sunil Kulkarni",
+      "mobile_number": "+91 9844556677",
+      "email": "sunil.kulkarni@techcorp.com",
+      "address": "Bungalow 7, Sindh Society, Aundh",
+      "city": "Pune",
+      "occupation": "Civil Engineer",
+      "family_members": 3,
+      "home_type": "Bungalow with private compound",
+      "previous_pet_experience": "Experienced with Beagle breed for over 6 years",
+      "reason_for_adoption": "Wanted to give a rescued Beagle a dignified, joyful retirement home.",
+      "preferred_pet": "Charlie (PET-2026-00005)",
+      "additional_information": "Full home verification completed successfully.",
+      "status": "ADOPTED",
+      "admin_remarks": "Approved after exemplary home visit and family interaction. Formal adoption certificate issued.",
+      "reviewed_by": 1,
+      "reviewed_at": "2026-02-14 11:00:00",
+      "created_at": "2026-02-05 10:15:00"
+    }
+  ],
+  "visits": [
+    {
+      "id": 1,
+      "application_id": 2,
+      "pet_id": 8,
+      "assigned_staff_id": 3,
+      "visit_date": "2026-10-03",
+      "visit_time": "15:30:00",
+      "location": "Main Shelter Courtyard B",
+      "status": "SCHEDULED",
+      "notes": "Meet and greet between Rohan Verma family and Bella. Introduce teenagers to assess bonding.",
+      "visit_result": "Pending",
+      "recommendation": null,
+      "report_notes": null,
+      "report_document_url": null,
+      "report_submitted_at": null,
+      "created_by": 1,
+      "created_at": "2026-10-01 16:30:00"
+    },
+    {
+      "id": 2,
+      "application_id": 3,
+      "pet_id": 5,
+      "assigned_staff_id": 3,
+      "visit_date": "2026-02-10",
+      "visit_time": "11:00:00",
+      "location": "Applicant Home (Sindh Society, Aundh)",
+      "status": "COMPLETED",
+      "notes": "On-site home assessment to verify safety of boundary wall and outdoor space.",
+      "visit_result": "Positive",
+      "recommendation": "Highly recommended for immediate adoption. Safe premises and experienced owners.",
+      "report_notes": "Boundary wall is 6 feet high with secure gates. Pet bed and feeding zone already prepared.",
+      "report_document_url": "/uploads/reports/visit_report_charlie.pdf",
+      "report_submitted_at": "2026-02-10 14:00:00",
+      "created_by": 1,
+      "created_at": "2026-02-06 12:00:00"
+    }
+  ],
+  "adoption_records": [
+    {
+      "id": 1,
+      "application_id": 3,
+      "pet_id": 5,
+      "applicant_name": "Sunil Kulkarni",
+      "applicant_email": "sunil.kulkarni@techcorp.com",
+      "applicant_phone": "+91 9844556677",
+      "adoption_date": "2026-02-15",
+      "agreement_text": "I, Sunil Kulkarni, hereby take full legal, medical, and emotional guardianship of Beagle Charlie (PET-2026-00005). I agree never to abandon, chain, or mistreat the animal and allow periodic shelter wellness checks.",
+      "certificate_code": "CERT-2026-00001",
+      "admin_remarks": "Official transfer of guardianship executed. Charlie transitioned to his forever home.",
+      "created_by": 1,
+      "created_at": "2026-02-15 11:30:00"
+    }
+  ],
+  "foster_records": [
+    {
+      "id": 1,
+      "pet_id": 7,
+      "foster_person": "Sneha Joshi (Staff Foster)",
+      "mobile": "+91 9822334455",
+      "address": "Flat 101, Parijat Apartments, Model Colony, Pune",
+      "start_date": "2026-09-01",
+      "expected_end_date": "2026-10-15",
+      "actual_end_date": null,
+      "pet_condition": "Healthy, timid, gaining confidence around household sounds",
+      "notes": "Temporary socialization foster prior to open public adoption listing.",
+      "status": "ACTIVE",
+      "created_by": 3,
+      "created_at": "2026-09-01 10:00:00"
+    }
+  ],
+  "rescue_records": [
+    {
+      "id": 1,
+      "rescue_code": "RES-2026-00001",
+      "pet_type": "Dog",
+      "rescue_date": "2026-05-10",
+      "rescue_location": "Highway 48 near Pune Toll Plaza",
+      "rescued_by": "Vikram Singh",
+      "initial_condition": "Dehydrated, limp on left hind leg, minor abrasions",
+      "emergency_treatment": "Saline IV drip, wound cleaning, antiseptic dressing, tetanus shot",
+      "photo_url": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=800&q=80",
+      "current_location": "Main Shelter Kennel A3",
+      "notes": "Responded to distress call from highway patrol. Now recovered and named Rocky.",
+      "status": "CONVERTED_TO_PET",
+      "converted_pet_id": 3,
+      "created_by": 4,
+      "created_at": "2026-05-10 11:30:00"
+    },
+    {
+      "id": 2,
+      "rescue_code": "RES-2026-00002",
+      "pet_type": "Cat",
+      "rescue_date": "2026-09-28",
+      "rescue_location": "Shivaji Nagar Market Back Alley",
+      "rescued_by": "Vikram Singh",
+      "initial_condition": "Underweight kitten, conjunctivitis in right eye, shivering",
+      "emergency_treatment": "Gentamicin eye drops, warmed incubator, nutrient-rich formula",
+      "photo_url": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80",
+      "current_location": "Clinic Intake Ward",
+      "notes": "Found abandoned in cardboard box during rain. Under observation before public adoption.",
+      "status": "RESCUED",
+      "converted_pet_id": null,
+      "created_by": 4,
+      "created_at": "2026-09-28 14:15:00"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "title": "New Adoption Application",
+      "message": "Anita Deshmukh submitted application APP-2026-00001 for Milo (PET-2026-00004).",
+      "type": "ADOPTION_APPLICATION",
+      "related_entity": "adoption_applications",
+      "related_id": 1,
+      "is_read": 0,
+      "created_at": "2026-10-02 14:20:00"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "title": "Vaccination Overdue",
+      "message": "Bruno (PET-2026-00001) Rabies Booster is overdue since 2026-09-20!",
+      "type": "VACCINATION_OVERDUE",
+      "related_entity": "vaccinations",
+      "related_id": 1,
+      "is_read": 0,
+      "created_at": "2026-10-03 08:00:00"
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "title": "Vaccination Due Soon",
+      "message": "Bruno (PET-2026-00001) DHPPi 7-in-1 is due within 4 days (2026-10-07).",
+      "type": "VACCINATION_DUE",
+      "related_entity": "vaccinations",
+      "related_id": 2,
+      "is_read": 0,
+      "created_at": "2026-10-03 08:00:00"
+    },
+    {
+      "id": 4,
+      "user_id": 1,
+      "title": "Adoption Visit Scheduled Today",
+      "message": "Visit with Rohan Verma for Bella (PET-2026-00008) is scheduled today at 15:30.",
+      "type": "VISIT_TODAY",
+      "related_entity": "visits",
+      "related_id": 1,
+      "is_read": 0,
+      "created_at": "2026-10-03 08:30:00"
+    },
+    {
+      "id": 5,
+      "user_id": 1,
+      "title": "Monthly Report Pending",
+      "message": "Monthly health report for October 2026 is pending for 8 shelter pets.",
+      "type": "MONTHLY_REPORT_PENDING",
+      "related_entity": "pets",
+      "related_id": 1,
+      "is_read": 0,
+      "created_at": "2026-10-01 09:00:00"
+    },
+    {
+      "id": 6,
+      "user_id": 1,
+      "title": "Foster End Date Approaching",
+      "message": "Foster placement for Snowball (PET-2026-00007) ends on 2026-10-15.",
+      "type": "FOSTER_END_APPROACHING",
+      "related_entity": "foster_records",
+      "related_id": 1,
+      "is_read": 0,
+      "created_at": "2026-10-02 09:30:00"
+    }
+  ],
+  "activity_logs": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "user_name": "admin",
+      "action": "LOGIN",
+      "details": "Admin authenticated into control panel",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-03 10:15:00"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "user_name": "admin",
+      "action": "SCHEDULE_VISIT",
+      "details": "Scheduled adoption visit for applicant Rohan Verma (Pet: Bella)",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-01 16:30:00"
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "user_name": "dr.sharma",
+      "action": "ADD_MEDICAL_RECORD",
+      "details": "Recorded fitness evaluation for Labrador Bella",
+      "ip_address": "192.168.1.15",
+      "created_at": "2026-06-05 10:00:00"
+    },
+    {
+      "id": 4,
+      "user_id": 4,
+      "user_name": "vikram.rescue",
+      "action": "ADD_PET",
+      "details": "Enrolled rescued German Shepherd mix Rocky into database",
+      "ip_address": "192.168.1.22",
+      "created_at": "2026-05-12 15:40:00"
+    },
+    {
+      "id": 5,
+      "user_id": 1,
+      "user_name": "admin",
+      "action": "APPROVE_APPLICATION",
+      "details": "Approved adoption application APP-2026-00003 for Charlie",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-02-14 11:00:00"
+    }
+  ],
+  "settings": [
+    {
+      "id": 1,
+      "shelter_name": "Paws & Care Animal Shelter & Sanctuary",
+      "shelter_logo": "/uploads/logo.png",
+      "phone": "+91 98765 43210",
+      "email": "contact@pawsandcare.org",
+      "address": "Plot 45, Green Valley Sanctuary Road, Near Pashan Lake, Pune, Maharashtra 411021, India",
+      "website_info": "Dedicated non-profit sanctuary rescuing, rehabilitating, and rehoming vulnerable animals across Maharashtra since 2018.",
+      "currency": "INR",
+      "updated_at": "2026-10-01 10:00:00"
+    }
+  ]
+}
